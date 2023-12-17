@@ -15,3 +15,10 @@ Feature: Orange HRM Login page
     Examples: 
       | Username | Password |
       | Admin    | admin123 |
+
+   @smoke
+  Scenario Outline: Admin page
+    Given Go to login page
+    And click on forget password
+    And Enter the "username"
+    Then click on "Next"

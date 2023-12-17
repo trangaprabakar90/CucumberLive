@@ -16,6 +16,12 @@ Feature: Orange HRM Login page
       | Username | Password |
       | Admin    | admin123 |
 
+   @smoke
+  Scenario Outline: Admin page
+    Given Go to login page
+    And click on forget password
+    And Enter the "username"
+    Then click on "Next"
       
    Scenario Outline: Copy of TC1
     Given Verify the Sytem Navigated to the login Page
@@ -29,5 +35,3 @@ Feature: Orange HRM Login page
     Examples: 
       | Username | Password |
       | Admin    | admin123 |
-
-      
